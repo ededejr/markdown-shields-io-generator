@@ -1,4 +1,4 @@
-# Shield Generator
+# Markdown Shield Generator
 A simple Node.js script to generate shields for a markdown document.
 
 ## Making your own shields
