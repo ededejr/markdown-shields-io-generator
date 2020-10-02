@@ -1,0 +1,15 @@
+{
+  "name": "markdown-shields-io-generator",
+  "version": "1.0.0",
+  "description": "Generate markdown shields using Shields.io and simple icons",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node --experimental-modules src/index.mjs > out.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dxede",
+  "license": "See LICENSE.md",
+  "dependencies": {
+    "simple-icons": "^3.10.0"
+  }
+}

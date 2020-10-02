@@ -1,0 +1,10 @@
+![Node.js](https://img.shields.io/badge/Node.js-informational?style=for-the-badge&color=339933&logo=Node.js&logoColor=white&labelColor=339933) ![MongoDB](https://img.shields.io/badge/MongoDB-informational?style=for-the-badge&color=47A248&logo=MongoDB&logoColor=white&labelColor=47A248) ![SQLite](https://img.shields.io/badge/SQLite-informational?style=for-the-badge&color=003B57&logo=SQLite&logoColor=white&labelColor=003B57) 
+
+![Gatsby](https://img.shields.io/badge/Gatsby-informational?style=for-the-badge&color=663399&logo=Gatsby&logoColor=white&labelColor=663399) ![ASP.NET](https://img.shields.io/badge/ASP.NET-informational?style=for-the-badge&color=5C2D91&logo=.NET&logoColor=white&labelColor=5C2D91) ![C++](https://img.shields.io/badge/C%2B%2B-informational?style=for-the-badge&color=00599C&logo=C%2B%2B&logoColor=white&labelColor=00599C) 
+
+![Docker](https://img.shields.io/badge/Docker-informational?style=for-the-badge&color=2496ED&logo=Docker&logoColor=white&labelColor=2496ED) ![Digital Ocean](https://img.shields.io/badge/Digital%20Ocean-informational?style=for-the-badge&color=0080FF&logo=DigitalOcean&logoColor=white&labelColor=0080FF) ![AWS](https://img.shields.io/badge/AWS-informational?style=for-the-badge&color=232F3E&logo=Amazon%20AWS&logoColor=FF9900&labelColor=232F3E) 
+
+![React](https://img.shields.io/badge/React-informational?style=for-the-badge&color=61DAFB&logo=React&logoColor=black&labelColor=61DAFB) ![Angular](https://img.shields.io/badge/Angular-informational?style=for-the-badge&color=DD0031&logo=Angular&logoColor=white&labelColor=DD0031) ![Ember](https://img.shields.io/badge/Ember-informational?style=for-the-badge&color=E04E39&logo=Ember.js&logoColor=white&labelColor=E04E39) 
+
+![JavaScript](https://img.shields.io/badge/JavaScript-90%25-informational?style=for-the-badge&color=black&logo=JavaScript&logoColor=black&labelColor=F7DF1E) ![](https://img.shields.io/badge/A-informational?style=for-the-badge&color=black&logo=TypeScript&logoColor=white&labelColor=007ACC) ![Python](https://img.shields.io/badge/Python-informational?style=for-the-badge&color=3776AB&logo=Python&logoColor=whitesmoke&labelColor=3776AB) 
+
