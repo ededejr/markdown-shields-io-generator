@@ -1,14 +1,31 @@
-import * as data from './data.mjs';
-import { BrandedShield } from './shield.mjs';
+import data from './data.mjs';
+import Shield from './shield.mjs';
+
+/**
+ * Create a markdown shield string from a shield config
+ */
+function createMarkdownShield (config = {}) {
+  return (new Shield(config.label, config.options, config.meta)).markdownImageString;
+}
 
 /**
  * Creates a markdown string for contents of data.
  */
-function creatShieldFromData () {
-  Object.keys(data).map(k => data[k]).forEach(row => console.log(row.reduce((p, c, i) => {
-    c = (new BrandedShield(c.label, c.options, c.meta)).markdownImageString; 
-    return i === 0 ? c : `${p} ${c}`;
-  }, ''), '\n'));
+function creatShieldsFromData () {
+  Object.keys(data).forEach(section => {
+    if (!section.startsWith('_')) {
+      console.log(section);
+    }
+    
+    const row = data[section];
+
+    console.log(row.reduce((p, c, i) => {
+      c = createMarkdownShield(c); 
+      return i === 0 ? c : `${p} ${c}`;
+    }, ''), '\n')
+  });
 }
 
-creatShieldFromData();
+
+
+creatShieldsFromData();

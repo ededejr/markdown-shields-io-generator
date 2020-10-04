@@ -17,48 +17,53 @@ You can view the `src/config.mjs` file for how to configure a shield.
 
 ## Examples
 
-### Basic Branded Shield
+### Basic Shield
 ```
 {
-  message: 'JavaScript',
-  options: {
-    color: `F7DF1E`,
-    logo: 'JavaScript',
-    logoColor: 'black',
-  }
+  label: 'JavaScript',
 }
 ```
 #### Creates:
-![JavaScript](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&color=F7DF1E&logo=JavaScript&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-informational?style=for-the-badge&color=rgba(0%2C0%2C0%2C%200.8)&logo=JavaScript&logoColor=F7DF1E)
 
 
 ### Label with Meta Shield
 ```
 {
   label: 'JavaScript',
-  meta: '90%',
-  options: {
-    labelColor: `F7DF1E`,
-    color: 'black',
-    logo: 'JavaScript',
-    logoColor: 'black',
-  }
+  meta: 'A+',
 }
 ```
 #### Creates:
-![JavaScript](https://img.shields.io/badge/JavaScript-A+-informational?style=for-the-badge&color=black&logo=JavaScript&logoColor=black&labelColor=F7DF1E)
+![JavaScript](https://img.shields.io/badge/JavaScript-A%2B-informational?style=for-the-badge&color=rgba(0%2C0%2C0%2C%200.8)&logo=JavaScript&logoColor=F7DF1E)
 
-### Meta and logo only
+### Styling Label and Meta example
 ```
 {
+  label: 'JavaScript',
   meta: 'A+',
   options: {
-    color: `black`,
-    labelColor: '007ACC',
-    logo: 'TypeScript',
-    logoColor: 'white',
+    color: 'F7DF1E',
+    labelColor: 'black'
   }
 }
 ```
 #### Creates:
-![](https://img.shields.io/badge/-A-informational?style=for-the-badge&color=black&logo=TypeScript&logoColor=white&labelColor=007ACC)
+![JavaScript](https://img.shields.io/badge/JavaScript-A%2B-informational?style=for-the-badge&color=F7DF1E&logo=JavaScript&logoColor=F7DF1E&labelColor=black)
+
+
+### Alternate Style
+```
+{
+  label: 'JavaScript',
+  meta: 'A+',
+  options: {
+    style: 'flat',
+    logo: null,
+    color: 'F7DF1E',
+    labelColor: 'black'
+  }
+}
+```
+#### Creates:
+![JavaScript](https://img.shields.io/badge/JavaScript-A%2B-informational?style=flat&color=F7DF1E&logoColor=F7DF1E&labelColor=black)

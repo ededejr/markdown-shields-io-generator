@@ -4,8 +4,23 @@ import SimpleIcons from 'simple-icons';
 export default class Shield {
   constructor(label = '', options = {}, meta = null) {
     this.label = label;
-    this.options = { ...ShieldOptions, ...options };
     this.meta = meta;
+    this.options = options;
+    this.lookupShieldOptions();
+  }
+
+  lookupShieldOptions () {
+    const {options, label} = this;
+    const {logo, logoColor} = options || {};
+    const {title, hex} = SimpleIcons.get(logo || label) || {};
+
+    this.options = {
+      ...ShieldOptions,
+      color: 'rgba(0,0,0, 0.8)',
+      logo: title,
+      logoColor: logoColor || hex || 'white',
+      ...this.options,
+    };
   }
 
   /**
@@ -15,9 +30,9 @@ export default class Shield {
   get queryString () {
     const { options } = this;
 
-    const isValueInOptions = (val) => Boolean(options[val]);
+    const keyFilter = (val) => Boolean(options[val]) && !['siteUrl'].includes(val);
     const makeParamString = (val) => `${val}=${encodeURIComponent(options[val])}`;
-    const viableKeys = Object.keys(options).filter(isValueInOptions);
+    const viableKeys = Object.keys(options).filter(keyFilter);
   
     return viableKeys.reduce((previous, current, indx) => {
       const paramString = makeParamString(current);
@@ -38,31 +53,7 @@ export default class Shield {
    * Create a markdown image string for a shield.
    */
   get markdownImageString () {
-    return `![${this.label}](${this.url})`;
-  }
-}
-
-/**
- * Functions the same as Shield but will automatically try to find the right
- * color/logo given the input label.
- */
-export class BrandedShield extends Shield {
-  constructor(label, options = {}, meta = null) {
-    super(label, null, meta);
-    this.options = options;
-    this.loadDataFromLabel();
-  }
-
-  loadDataFromLabel() {
-    const {label, options} = this;
-    const {logo, logoColor} = options || {};
-    const {title, hex} = SimpleIcons.get(logo || label) || {};
-    this.options = {
-      ...ShieldOptions,
-      ...this.options,
-      labelColor: hex,
-      logo: title,
-      logoColor: logoColor || 'white',
-    }
+    const shieldString = `![${this.label}](${this.url})`;
+    return this.options.siteUrl ? `[${shieldString}](${this.options.siteUrl})` : shieldString;
   }
 }

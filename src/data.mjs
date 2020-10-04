@@ -1,138 +1,104 @@
-export const languages = [
-  {
-    label: 'JavaScript',
-    meta: '90%',
-    options: {
-      labelColor: `F7DF1E`,
-      color: 'black',
-      logo: 'JavaScript',
-      logoColor: 'black',
+export default {
+  '#### Languages': [
+    {
+      label: 'JavaScript',
+      options: {
+        siteUrl: `https://javascript.info`,
+      }
+    },
+    {
+      label: 'TypeScript',
+      options: {
+        siteUrl: `https://www.typescriptlang.org`,
+      }
+    },
+    {
+      label: 'Python',
+      options: {
+        siteUrl: `https://www.python.org`,
+      }
+    },
+  ],
+  '_Frontend': [
+    {
+      label: 'React',
+      options: {
+        siteUrl: `https://reactjs.org`,
+      }
+    },
+    {
+      label: 'Angular',
+      options: {
+        siteUrl: `https://angular.io`
+      }
+    },
+    {
+      label: 'Ember',
+      options: {
+        siteUrl: `https://emberjs.com`,
+      }
     }
-  },
-  {
-    // label: 'TypeScript',
-    meta: 'A',
-    options: {
-      color: `black`,
-      labelColor: '007ACC',
-      logo: 'TypeScript',
-      logoColor: 'white',
+  ],
+  '_Backend': [
+    {
+      label: 'Node.js',
+      options: {
+        siteUrl: `https://nodejs.org/en/`,
+      }
+    },
+    {
+      label: 'MongoDB',
+      options: {
+        siteUrl: `https://www.mongodb.com`,
+      }
+    },
+    {
+      label: 'SQLite',
+      options: {
+        siteUrl: `https://www.sqlite.org/index.html`,
+      }
+    },
+  ],
+  '_DevOps': [
+    {
+      label: 'Docker',
+      options: {
+        siteUrl: `https://www.docker.com`,
+      }
+    },
+    {
+      label: 'Digital Ocean',
+      options: {
+        siteUrl: `https://www.digitalocean.com`,
+      }
+    },
+    {
+      label: 'AWS',
+      options: {
+        logoColor: 'FF9900',
+        siteUrl: `https://aws.amazon.com`,
+      }
     }
-  },
-  {
-    label: 'Python',
-    options: {
-      color: `3776AB`,
-      logo: 'Python',
-      logoColor: 'whitesmoke',
+  ],
+  [`### 📚 Stuff I'm learning to use`]: [
+    {
+      label: 'Gatsby',
+      options: {
+        siteUrl: `https://www.gatsbyjs.com`,
+      }
+    },
+    {
+      label: 'ASP.NET',
+      options: {
+        logo: '.NET',
+        siteUrl: `https://dotnet.microsoft.com/apps/aspnet`,
+      }
+    },
+    {
+      label: 'C++',
+      options: {
+        siteUrl: `http://www.cplusplus.com/doc/tutorial/`,
+      }
     }
-  },
-];
-
-export const frontend = [
-  {
-    label: 'React',
-    options: {
-      logo: 'React',
-      color: '61DAFB',
-      logoColor: 'black',
-    }
-  },
-  {
-    label: 'Angular',
-    options: {
-      logo: 'Angular',
-      color: 'DD0031',
-      logoColor: 'white',
-    }
-  },
-  {
-    label: 'Ember',
-    options: {
-      logo: 'Ember.js',
-      color: 'E04E39',
-      logoColor: 'white',
-    }
-  }
-]
-
-export const backend = [
-  {
-    label: 'Node.js',
-    options: {
-      logo: 'Node.js',
-      color: '339933',
-      logoColor: 'white'
-    }
-  },
-  {
-    label: 'MongoDB',
-    options: {
-      logo: 'MongoDB',
-      color: '47A248',
-      logoColor: 'white',
-    }
-  },
-  {
-    label: 'SQLite',
-    options: {
-      logo: 'SQLite',
-      color: '003B57',
-      logoColor: 'white',
-    }
-  },
-]
-
-export const devOps = [
-  {
-    label: 'Docker',
-    options: {
-      logo: 'docker',
-      color: '2496ED',
-      logoColor: 'white',
-    }
-  },
-  {
-    label: 'Digital Ocean',
-    options: {
-      logo: 'DigitalOcean',
-      color: '0080FF',
-      logoColor: 'white',
-    }
-  },
-  {
-    label: 'AWS',
-    options: {
-      logo: 'Amazon AWS',
-      color: '232F3E',
-      logoColor: 'FF9900',
-    }
-  }
-];
-
-export const currentlyLearning = [
-  {
-    label: 'Gatsby',
-    options: {
-      logo: 'Gatsby',
-      color: '663399',
-      logoColor: 'white',
-    }
-  },
-  {
-    label: 'ASP.NET',
-    options: {
-      logo: '.NET',
-      color: '5C2D91',
-      logoColor: 'white',
-    }
-  },
-  {
-    label: 'C++',
-    options: {
-      logo: 'C++',
-      color: '00599C',
-      logoColor: 'white',
-    }
-  }
-]
+  ]
+}
